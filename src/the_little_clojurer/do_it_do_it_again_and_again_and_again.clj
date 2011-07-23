@@ -1,6 +1,5 @@
 (ns the-little-clojurer.do-it-do-it-again-and-again-and-again
-  (:use the-little-clojurer.preface
-        the-little-clojurer.toys))
+  (:use the-little-clojurer.preface))
 
 
 (def lat?                               ; define => def
