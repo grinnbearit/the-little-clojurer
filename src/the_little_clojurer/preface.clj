@@ -2,4 +2,4 @@
 
 
 (def atom?
-  (complement seq?))
+  (complement coll?))
