@@ -1,5 +1,7 @@
 (ns the-little-clojurer.cons-the-magnificent
-  (:use the-little-clojurer.preface))
+  (:use [the-little-clojurer
+         [preface]
+         [do-it-do-it-again-and-again-and-again]]))
 
 
 (defn rember
@@ -49,9 +51,13 @@
 (defn subst2
   [new o1 o2 lat]
   (cond
-   (empty? lat) ()
+   (empty? lat)
+   ()
+
    (or (= o1 (first lat))
-       (= o2 (first lat))) (conj (rest lat) new)
+       (= o2 (first lat)))
+   (conj (rest lat) new)
+
    :else (conj (subst2 new o1 o2 (rest lat))
                (first lat))))
 
