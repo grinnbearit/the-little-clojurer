@@ -1,4 +1,4 @@
-(ns numbers-games
+(ns the-little-clojurer.numbers-games
   (:refer-clojure :exclude [+ - * / > <])   ; prevents these functions from being imported
   (:use the-little-clojurer.preface))
 
